@@ -22,7 +22,7 @@ It provides the guidelines for the execution of a Data Mining process and then d
 | Day 2 (11/04/2024) | Matteo Francia | Hands-on data mining and machine learning |
 | Day 3 (15/04/2024) | Enrico Gallinucci | Hands-on Spark and OLAP (lab) |
 | Day 4 (23/04/2024) | Matteo Francia | Hands-on data mining and machine learning (lab) |
-| Day 5 (??/??/2024) | Enrico Gallinucci | Evaluation, follow-up investigation and discussion |
+| Day 5 (14/05/2024) | Enrico Gallinucci | Final exam |
 
 ## Software
 
