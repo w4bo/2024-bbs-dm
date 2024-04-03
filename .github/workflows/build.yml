@@ -1,0 +1,36 @@
+name: "build"
+on: [push, pull_request]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+          architecture: 'x64'
+      - name: Run the notebooks
+        run: |
+          cd materials
+          sudo apt-get install openjdk-8-jdk-headless -qq
+          wget -q http://archive.apache.org/dist/spark/spark-3.1.1/spark-3.1.1-bin-hadoop3.2.tgz
+          wget http://big.csr.unibo.it/projects/nosql-datasets/2022-bbs-dsaa-foodmart.csv
+          tar xf spark-3.1.1-bin-hadoop3.2.tgz
+          sudo mkdir -p /content
+          sudo mv spark-3.1.1-bin-hadoop3.2 /content
+          pip install -r requirements.txt
+          chmod +x generate.sh
+          ./generate.sh
+          mkdir _site
+          cp *.css _site
+          cp *.html _site
+          ls -las
+      - name: Build local Jupyter
+        run: |
+          cd materials
+          docker build -t jupyter .
+      - name: Deploy
+        uses: JamesIves/github-pages-deploy-action@v4.4.1
+        with:
+          branch: gh-pages # The branch the action should deploy to.
+          folder: materials/_site # The folder the action should deploy.
