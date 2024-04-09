@@ -7464,12 +7464,12 @@ main {
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <p>Data analysis involves several steps:</p>
 <ol>
-<li>Frame the problem and look at the big picture<ul>
+<li><strong>Frame the problem</strong> and look at the big picture<ul>
 <li>Define the objective in business terms</li>
 <li>How should performance be measured?</li>
 </ul>
 </li>
-<li>Get the data<ul>
+<li><strong>Get the data</strong><ul>
 <li>List the data you need and how much you need</li>
 <li>Collect of data from one or more sources (database, web, etc.)<ul>
 <li>In this lab, things are much simpler</li>
@@ -7477,7 +7477,7 @@ main {
 </li>
 </ul>
 </li>
-<li>Explore the data to gain insights<ul>
+<li><strong>Explore the data</strong> to gain insights<ul>
 <li>Create an environment to keep track of your data exploration<ul>
 <li>You have been provided with notebook environments</li>
 </ul>
@@ -7485,15 +7485,27 @@ main {
 <li>Understanding of the structure and meaning of data</li>
 </ul>
 </li>
-<li>Transformation of data into manageable formats for subsequent steps</li>
-<li>Extraction of knowledge from data (statistics, models, patterns, etc.)</li>
-<li>Validation of the extracted knowledge</li>
-<li>Deployment of the extracted knowledge and models</li>
+<li><strong>Transformation of data</strong> into manageable formats for subsequent steps</li>
+<li><strong>Extraction of knowledg</strong>e from data (statistics, models, patterns, etc.)</li>
+<li><strong>Validation</strong> of the extracted knowledge</li>
+<li><strong>Deployment</strong> of the extracted knowledge and models</li>
 </ol>
+<p>Does it ring a bell?</p>
 </div>
 </div>
 </div>
 </div></section></section><section><section>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=7ce7d0b8">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h2 id="The-CRISPDM-model">The CRISPDM model<a class="anchor-link" href="#The-CRISPDM-model">¶</a></h2>
+</div>
+</div>
+</div>
+</div>
 <div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=5e0600b8">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
@@ -7505,13 +7517,41 @@ main {
 </div>
 </div>
 </div></section></section><section><section>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=e0f455db">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>We don't do machine learning for the sake of machine learning</p>
+<ul>
+<li>We have real problems to solve</li>
+<li>Machine learning is not a simple copy and paste of code</li>
+<li>A data scientist must understand the data and the domain before trying any model</li>
+</ul>
+</div>
+</div>
+</div>
+</div></section></section><section><section>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=278ae0ec">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h2 id="Data-collection">Data collection<a class="anchor-link" href="#Data-collection">¶</a></h2><p>Data collection is the process of gathering and measuring information on targeted variables in an established system, which then enables one to answer relevant questions and evaluate outcomes.</p>
+<p>The goal for all data collection is to capture evidence that allows data analysis to lead to the formulation of credible answers to the questions that have been posed.</p>
+</div>
+</div>
+</div>
+</div></section></section><section><section>
 <div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=4ae284be">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h1 id="Relational-data">Relational data<a class="anchor-link" href="#Relational-data">¶</a></h1><p><strong>Relational data</strong> are usually collected in <strong>tabular</strong> format</p>
+<h2 id="Relational-data">Relational data<a class="anchor-link" href="#Relational-data">¶</a></h2><p><strong>Relational data</strong> are usually collected in <strong>tabular</strong> format</p>
 <ul>
 <li>Each row is an <strong>observation</strong> (instance or tuple)<ul>
 <li>An object of the analysis</li>
@@ -8166,6 +8206,32 @@ dtype: int64</pre>
 <p>A signed integer is a 32-bit datum that encodes an integer in the range:</p>
 <p>$[-2^{31}, 2^{31}-1] = [-2147483648, 2147483647]$</p>
 <p>$2201010001 &gt; 2147483647$</p>
+<p>What are the implications of a data type?</p>
+</div>
+</div>
+</div>
+</div></section></section><section><section>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=5299b4b8">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>Pandas automatically infers data types, or they can be specified during creation</p>
+<ul>
+<li>Common data types are numeric ones<ul>
+<li><code>np.floatN</code> represents floating numbers (e.g., -3.14)</li>
+<li><code>np.intN</code>/<code>np.uintN</code> represent integers with/without sign (-42 and 42)</li>
+<li><code>N</code> is the number of needed bits: 8, 16, 32 o 64</li>
+</ul>
+</li>
+<li>Other data types<ul>
+<li><code>bool</code>: Boolean values</li>
+<li><code>datetime64</code>, timedelta64: timestamp and time intervals</li>
+<li><code>object</code>: mainly used for strings</li>
+</ul>
+</li>
+</ul>
 </div>
 </div>
 </div>
@@ -8291,31 +8357,6 @@ dtype: int64</pre>
 <li>(Categorical) <strong>Ordinal</strong>: can distinguish and sort the values</li>
 <li>(Numeric) <strong>Interval</strong>: can distinguish and sort the values, and compute their difference</li>
 <li>(Numeric) <strong>Ratio</strong>: can distinguish and sort the values, and compute their difference and ratio</li>
-</ul>
-</div>
-</div>
-</div>
-</div></section></section><section><section>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=5299b4b8">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>Pandas automatically infers data types, or they can be specified during creation</p>
-<ul>
-<li>Common data types are numeric ones<ul>
-<li><code>np.floatN</code> represents floating numbers (e.g., -3.14)</li>
-<li><code>np.intN</code>/<code>np.uintN</code> represent integers with/without sign (-42 and 42)</li>
-<li><code>N</code> is the number of needed bits: 8, 16, 32 o 64</li>
-</ul>
-</li>
-<li>Other data types<ul>
-<li><code>bool</code>: Boolean values</li>
-<li><code>datetime64</code>, timedelta64: timestamp and time intervals</li>
-<li><code>object</code>: mainly used for strings</li>
-</ul>
-</li>
 </ul>
 </div>
 </div>
@@ -8802,10 +8843,10 @@ Name: Quantity, dtype: int64</pre>
 <h3 id="Imputing-missing-values">Imputing missing values<a class="anchor-link" href="#Imputing-missing-values">¶</a></h3><p>Several strategies</p>
 <ul>
 <li>Replace <code>nan</code> with average or median values</li>
-<li>Forward/backward fill</li>
 <li>Dropping rows/columns with nans</li>
 </ul>
-<p>Which are the effects?</p>
+<p>What are the effects?</p>
+<p>What if we have temporal attributes?</p>
 </div>
 </div>
 </div>
@@ -9644,6 +9685,7 @@ memory usage: 1.6+ MB
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <p>... what about data visualization?</p>
+<p>Can we exploit the nature of the data?</p>
 </div>
 </div>
 </div>
@@ -9687,6 +9729,18 @@ memory usage: 1.6+ MB
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <p>What if we integrate open data?</p>
+<p>Can we exploit the nature of the data... again?</p>
+</div>
+</div>
+</div>
+</div></section></section><section><section>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=e179922a">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p><img alt="image" src="https://github.com/w4bo/2024-bbs-dm/assets/18005592/06d9fd78-5856-4119-accb-62de0f54b680"/></p>
 </div>
 </div>
 </div>
