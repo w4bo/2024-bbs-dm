@@ -4,8 +4,8 @@ jobs:
   build:
     runs-on: ubuntu-22.04
     steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-python@v4
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
         with:
           python-version: '3.10'
           architecture: 'x64'
@@ -26,7 +26,7 @@ jobs:
           cd materials
           docker build -t jupyter .
       - name: Deploy
-        uses: JamesIves/github-pages-deploy-action@v4.4.3
+        uses: JamesIves/github-pages-deploy-action@v4.5.0
         with:
           branch: gh-pages # The branch the action should deploy to.
           folder: materials/_site # The folder the action should deploy.
