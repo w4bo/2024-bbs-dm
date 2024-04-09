@@ -1,0 +1,11 @@
+version: '3.9'
+services:
+  notebook:
+    init: true
+    hostname: notebook
+    container_name: notebook
+    build: .
+    ports:
+      - '8888:8888'
+    volumes:
+      - .:/notebooks
