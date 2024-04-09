@@ -12,12 +12,6 @@ jobs:
       - name: Run the notebooks
         run: |
           cd materials
-          sudo apt-get install openjdk-8-jdk-headless -qq
-          wget -q http://archive.apache.org/dist/spark/spark-3.1.1/spark-3.1.1-bin-hadoop3.2.tgz
-          wget http://big.csr.unibo.it/projects/nosql-datasets/2022-bbs-dsaa-foodmart.csv
-          tar xf spark-3.1.1-bin-hadoop3.2.tgz
-          sudo mkdir -p /content
-          sudo mv spark-3.1.1-bin-hadoop3.2 /content
           pip install -r requirements.txt
           chmod +x generate.sh
           ./generate.sh
