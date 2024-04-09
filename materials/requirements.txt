@@ -7,3 +7,4 @@ matplotlib==3.6.3
 seaborn==0.13.2
 jupyter==1.0.0
 flaml[automl]==2.1.2
+rise==5.7.1
