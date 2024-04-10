@@ -7523,11 +7523,27 @@ main {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>We don't do machine learning for the sake of machine learning</p>
+<p>The CRISPDM tells us that we don't do machine learning for the sake of training machine learning models</p>
 <ul>
 <li>We have real problems to solve</li>
 <li>Machine learning is not a simple copy and paste of code</li>
 <li>A data scientist must understand the data and the domain before trying any model</li>
+</ul>
+</div>
+</div>
+</div>
+</div></section></section><section><section>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=bf9faedb">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h2 id="Domain-understanding">Domain understanding<a class="anchor-link" href="#Domain-understanding">¶</a></h2><p>The process of identifying and delving into the problem to solve</p>
+<ul>
+<li>This is an <em>interdisciplinary</em> step</li>
+<li>Even if you have good knowledge in the fields of computer and data science...</li>
+<li>... maybe you still miss domain knowledge that is fundamental to understand and model the problem</li>
 </ul>
 </div>
 </div>
@@ -7539,8 +7555,72 @@ main {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Data-collection">Data collection<a class="anchor-link" href="#Data-collection">¶</a></h2><p>Data collection is the process of gathering and measuring information on targeted variables in an established system, which then enables one to answer relevant questions and evaluate outcomes.</p>
-<p>The goal for all data collection is to capture evidence that allows data analysis to lead to the formulation of credible answers to the questions that have been posed.</p>
+<h2 id="Data-collection-&amp;-understanding">Data collection &amp; understanding<a class="anchor-link" href="#Data-collection-&amp;-understanding">¶</a></h2><p>The process of gathering and measuring information on targeted variables in an established system, which then enables one to answer relevant questions and evaluate outcomes.</p>
+<ul>
+<li>The <em>goal</em> for all data collection is to capture evidence that allows data analysis to lead to the formulation of credible answers to the questions that have been posed.</li>
+</ul>
+<p>Several <em>biases</em> can occur:</p>
+<ul>
+<li><strong>Selection</strong>: the sample used for data collection is not representative of the population being studied</li>
+<li><strong>Sampling</strong>: Arises when certain segments of the population are more likely to be included or excluded from the sample</li>
+<li><strong>Response</strong>: Occurs when participants in a survey or study provide inaccurate or misleading responses</li>
+<li><strong>Confirmation</strong>: Refers to the tendency to favor information that confirms pre-existing beliefs or hypotheses while ignoring or discounting contradictory evidence</li>
+<li><strong>Cultural</strong>: Occurs when data collection methods, survey questions, or study designs are culturally insensitive or fail to account for cultural differences</li>
+<li><strong>Time-Interval</strong>: Occurs when the timing of data collection influences the results</li>
+<li><strong>Publication</strong>: Tendency for researchers or journals to publish studies with positive or significant results while neglecting to publish studies with null or negative results</li>
+<li>... and many others</li>
+</ul>
+</div>
+</div>
+</div>
+</div></section></section><section><section>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=a5aad083">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>Plus,</p>
+<ul>
+<li>You should consider a tradeoff between time/costs</li>
+<li>How much is <em>enough</em></li>
+</ul>
+</div>
+</div>
+</div>
+</div></section></section><section><section>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=0625bebf">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h2 id="Data-preprocessing">Data preprocessing<a class="anchor-link" href="#Data-preprocessing">¶</a></h2><p>Data preprocessing plays a key role in a data analytics process and avoids “Garbage in, garbage out” [1]</p>
+<ul>
+<li>A broad range of activities; from correcting errors to selecting the most relevant features</li>
+<li>There are no pre-defined rules on the impact of pre-processing transformations</li>
+<li>Data scientists cannot easily foresee the impact of pipeline prototypes</li>
+</ul>
+<p>“Garbage in, garbage out” is particularly applicable to data mining and machine learning</p>
+<ul>
+<li>Out-of-range values (e.g., Income: −100)</li>
+<li>Impossible data combinations (e.g., Exam mark: 15, Exam result: Passed)</li>
+<li>Missing values</li>
+<li>Inconsistent data among multiple sources</li>
+<li>More?</li>
+</ul>
+<p>[1] Joseph Giovanelli, Besim Bilalli, Alberto Abelló: Effective data pre-processing for AutoML. DOLAP 2021</p>
+</div>
+</div>
+</div>
+</div></section></section><section><section>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=23338f80">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h3 id="Data-variety">Data variety<a class="anchor-link" href="#Data-variety">¶</a></h3><p><img alt="image" src="https://miro.medium.com/v2/resize:fit:1100/format:webp/1*YejjU_69ffDyrC0z-X9jYQ.jpeg"/></p>
 </div>
 </div>
 </div>
@@ -7551,7 +7631,7 @@ main {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Relational-data">Relational data<a class="anchor-link" href="#Relational-data">¶</a></h2><p><strong>Relational data</strong> are usually collected in <strong>tabular</strong> format</p>
+<h3 id="Relational-data">Relational data<a class="anchor-link" href="#Relational-data">¶</a></h3><p><strong>Relational data</strong> are usually collected in <strong>tabular</strong> format</p>
 <ul>
 <li>Each row is an <strong>observation</strong> (instance or tuple)<ul>
 <li>An object of the analysis</li>
@@ -8130,31 +8210,6 @@ dtype: int64</pre>
 </div>
 </div>
 </div></section></section><section><section>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=c7860f33">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Data-preprocessing">Data preprocessing<a class="anchor-link" href="#Data-preprocessing">¶</a></h2><p>Data preprocessing plays a key role in a data analytics process and avoids “Garbage in, garbage out” [1]</p>
-<ul>
-<li>A broad range of activities; from correcting errors to selecting the most relevant features</li>
-<li>There are no pre-defined rules on the impact of pre-processing transformations</li>
-<li>Data scientists cannot easily foresee the impact of pipeline prototypes</li>
-</ul>
-<p>“Garbage in, garbage out” is particularly applicable to data mining and machine learning</p>
-<ul>
-<li>Out-of-range values (e.g., Income: −100)</li>
-<li>Impossible data combinations (e.g., Exam mark: 15, Exam result: Passed)</li>
-<li>Missing values</li>
-<li>Inconsistent data among multiple sources</li>
-<li>More?</li>
-</ul>
-<p>[1] Joseph Giovanelli, Besim Bilalli, Alberto Abelló: Effective data pre-processing for AutoML. DOLAP 2021: 1-10</p>
-</div>
-</div>
-</div>
-</div></section></section><section><section>
 <div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=3602edb7">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
@@ -8180,7 +8235,7 @@ dtype: int64</pre>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Understanding-data-types">Understanding data types<a class="anchor-link" href="#Understanding-data-types">¶</a></h2><p>"It is imperative to know the attribute properties to carry out meaningful operations and research with them"</p>
+<h3 id="Understanding-data-types">Understanding data types<a class="anchor-link" href="#Understanding-data-types">¶</a></h3><p>"It is imperative to know the attribute properties to carry out meaningful operations and research with them"</p>
 <p>Why is data type important?</p>
 </div>
 </div>
@@ -8567,7 +8622,7 @@ memory usage: 288.0+ bytes
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Data-distribution">Data distribution<a class="anchor-link" href="#Data-distribution">¶</a></h2>
+<h3 id="Data-distribution">Data distribution<a class="anchor-link" href="#Data-distribution">¶</a></h3>
 </div>
 </div>
 </div>
@@ -8726,7 +8781,7 @@ Name: Quantity, dtype: int64</pre>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Missing-values">Missing values<a class="anchor-link" href="#Missing-values">¶</a></h2><p>Datasets often show missing values</p>
+<h3 id="Missing-values">Missing values<a class="anchor-link" href="#Missing-values">¶</a></h3><p>Datasets often show missing values</p>
 <ul>
 <li><p>E.g., they are not applicable (e.g., date of death) or unknown</p>
 </li>
@@ -8840,7 +8895,7 @@ Name: Quantity, dtype: int64</pre>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Imputing-missing-values">Imputing missing values<a class="anchor-link" href="#Imputing-missing-values">¶</a></h3><p>Several strategies</p>
+<h4 id="Imputing-missing-values">Imputing missing values<a class="anchor-link" href="#Imputing-missing-values">¶</a></h4><p>Several strategies</p>
 <ul>
 <li>Replace <code>nan</code> with average or median values</li>
 <li>Dropping rows/columns with nans</li>
@@ -9125,7 +9180,7 @@ Name: Quantity, dtype: float64</pre>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="The-Housing-case-study">The <code>Housing</code> case study<a class="anchor-link" href="#The-Housing-case-study">¶</a></h2><p>Check also:</p>
+<h1 id="The-Housing-case-study">The <code>Housing</code> case study<a class="anchor-link" href="#The-Housing-case-study">¶</a></h1><p>Check also:</p>
 <ul>
 <li><a href="https://www.kaggle.com/camnugent/california-housing-prices">https://www.kaggle.com/camnugent/california-housing-prices</a></li>
 <li><a href="https://www.oreilly.com/library/view/hands-on-machine-learning/9781492032632/">https://www.oreilly.com/library/view/hands-on-machine-learning/9781492032632/</a></li>
