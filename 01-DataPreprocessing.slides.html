@@ -8301,11 +8301,11 @@ dtype: int64</pre>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">([</span>
-    <span class="p">[</span><span class="s1">'Cola'</span><span class="p">,</span>   <span class="s1">'low'</span><span class="p">,</span>    <span class="s1">'05/07/2021'</span><span class="p">,</span> <span class="mi">10</span><span class="p">],</span>
-    <span class="p">[</span><span class="s1">'Bread'</span><span class="p">,</span>  <span class="s1">'medium'</span><span class="p">,</span> <span class="s1">'05/07/2021'</span><span class="p">,</span> <span class="mi">25</span><span class="p">],</span>
-    <span class="p">[</span><span class="s1">'Beer'</span><span class="p">,</span>   <span class="s1">'high'</span><span class="p">,</span>   <span class="s1">'06/07/2021'</span><span class="p">,</span> <span class="mi">100</span><span class="p">],</span>
-    <span class="p">[</span><span class="s1">'Diaper'</span><span class="p">,</span> <span class="s1">'high'</span><span class="p">,</span>   <span class="s1">'06/07/2021'</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">nan</span><span class="p">],</span>
-    <span class="p">[</span><span class="s1">'Pizza'</span><span class="p">,</span>  <span class="s1">'medium'</span><span class="p">,</span> <span class="s1">'06/07/2021'</span><span class="p">,</span> <span class="mi">25</span><span class="p">]],</span> <span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s1">'ID'</span><span class="p">,</span> <span class="s1">'PriceBin'</span><span class="p">,</span> <span class="s1">'Date'</span><span class="p">,</span> <span class="s1">'Quantity'</span><span class="p">])</span>
+    <span class="p">[</span><span class="s1">'Cola'</span><span class="p">,</span>   <span class="s1">'low'</span><span class="p">,</span>    <span class="s1">'05/07/2021'</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">2</span><span class="p">],</span>
+    <span class="p">[</span><span class="s1">'Bread'</span><span class="p">,</span>  <span class="s1">'medium'</span><span class="p">,</span> <span class="s1">'05/07/2021'</span><span class="p">,</span> <span class="mi">25</span><span class="p">,</span> <span class="mi">1</span><span class="p">],</span>
+    <span class="p">[</span><span class="s1">'Beer'</span><span class="p">,</span>   <span class="s1">'high'</span><span class="p">,</span>   <span class="s1">'06/07/2021'</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="mi">3</span><span class="p">],</span>
+    <span class="p">[</span><span class="s1">'Diaper'</span><span class="p">,</span> <span class="s1">'high'</span><span class="p">,</span>   <span class="s1">'06/07/2021'</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">nan</span><span class="p">,</span> <span class="mi">4</span><span class="p">],</span>
+    <span class="p">[</span><span class="s1">'Pizza'</span><span class="p">,</span>  <span class="s1">'medium'</span><span class="p">,</span> <span class="s1">'06/07/2021'</span><span class="p">,</span> <span class="mi">25</span><span class="p">,</span> <span class="mi">5</span><span class="p">]],</span> <span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s1">'ID'</span><span class="p">,</span> <span class="s1">'PriceBin'</span><span class="p">,</span> <span class="s1">'Date'</span><span class="p">,</span> <span class="s1">'Quantity'</span><span class="p">,</span> <span class="s1">'Review'</span><span class="p">])</span>
 <span class="n">df</span>
 </pre></div>
 </div>
@@ -8341,6 +8341,7 @@ dtype: int64</pre>
 <th>PriceBin</th>
 <th>Date</th>
 <th>Quantity</th>
+<th>Review</th>
 </tr>
 </thead>
 <tbody>
@@ -8350,6 +8351,7 @@ dtype: int64</pre>
 <td>low</td>
 <td>05/07/2021</td>
 <td>10.0</td>
+<td>2</td>
 </tr>
 <tr>
 <th>1</th>
@@ -8357,6 +8359,7 @@ dtype: int64</pre>
 <td>medium</td>
 <td>05/07/2021</td>
 <td>25.0</td>
+<td>1</td>
 </tr>
 <tr>
 <th>2</th>
@@ -8364,6 +8367,7 @@ dtype: int64</pre>
 <td>high</td>
 <td>06/07/2021</td>
 <td>100.0</td>
+<td>3</td>
 </tr>
 <tr>
 <th>3</th>
@@ -8371,6 +8375,7 @@ dtype: int64</pre>
 <td>high</td>
 <td>06/07/2021</td>
 <td>NaN</td>
+<td>4</td>
 </tr>
 <tr>
 <th>4</th>
@@ -8378,6 +8383,7 @@ dtype: int64</pre>
 <td>medium</td>
 <td>06/07/2021</td>
 <td>25.0</td>
+<td>5</td>
 </tr>
 </tbody>
 </table>
@@ -8418,35 +8424,6 @@ dtype: int64</pre>
 </div>
 </div>
 </div>
-</div></section></section><section><section>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=71eeee7f">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>Likert scale:</p>
-<ul>
-<li><code>[*, **, ***, ****, *****]</code></li>
-<li><code>[1, 2, 3, 4, 5]</code></li>
-</ul>
-<p>What about averaging?</p>
-</div>
-</div>
-</div>
-</div></section></section><section><section>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=0e398ea5">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<pre><code>Converting responses to a Likert-type question into an average seems an obvious and intuitive step, but it doesn't necessarily constitute good methodology. One important point is that respondents are often reluctant to express a strong opinion and may distort the results by gravitating to the neutral midpoint response. It also assumes that the emotional distance between mild agreement or disagreement and strong agreement or disagreement is the same, which isn't necessarily the case. At its most fundamental level, the problem is that the numbers in a Likert scale are not numbers as such, but a means of ranking responses.</code></pre>
-<p>The Likert scale is widely used in social work research, and is commonly constructed with four to seven points. It is usually treated as an interval scale, but strictly speaking it is an ordinal scale, where arithmetic operations cannot be conducted [1]</p>
-<p>[1] Wu, Huiping, and Shing-On Leung. "Can Likert scales be treated as interval scales?—A simulation study." Journal of social service research 43.4 (2017): 527-532.</p>
-</div>
-</div>
-</div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=41926ed4">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
@@ -8472,8 +8449,38 @@ dtype: int64</pre>
 PriceBin     object
 Date         object
 Quantity    float64
+Review        int64
 dtype: object</pre>
 </div>
+</div>
+</div>
+</div>
+</div></section></section><section><section>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=b09d91ce">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>Likert scale:</p>
+<ul>
+<li><code>[*, **, ***, ****, *****]</code></li>
+<li><code>[1, 2, 3, 4, 5]</code></li>
+</ul>
+<p>What about averaging?</p>
+</div>
+</div>
+</div>
+</div></section></section><section><section>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=3512dc00">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<pre><code>Converting responses to a Likert-type question into an average seems an obvious and intuitive step, but it doesn't necessarily constitute good methodology. One important point is that respondents are often reluctant to express a strong opinion and may distort the results by gravitating to the neutral midpoint response. It also assumes that the emotional distance between mild agreement or disagreement and strong agreement or disagreement is the same, which isn't necessarily the case. At its most fundamental level, the problem is that the numbers in a Likert scale are not numbers as such, but a means of ranking responses.</code></pre>
+<p>The Likert scale is widely used in social work research, and is commonly constructed with four to seven points. It is usually treated as an interval scale, but strictly speaking it is an ordinal scale, where arithmetic operations cannot be conducted [1]</p>
+<p>[1] Wu, Huiping, and Shing-On Leung. "Can Likert scales be treated as interval scales?—A simulation study." Journal of social service research 43.4 (2017): 527-532.</p>
 </div>
 </div>
 </div>
@@ -8501,15 +8508,16 @@ dtype: object</pre>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
 <pre>&lt;class 'pandas.core.frame.DataFrame'&gt;
 RangeIndex: 5 entries, 0 to 4
-Data columns (total 4 columns):
+Data columns (total 5 columns):
  #   Column    Non-Null Count  Dtype  
 ---  ------    --------------  -----  
  0   ID        5 non-null      object 
  1   PriceBin  5 non-null      object 
  2   Date      5 non-null      object 
  3   Quantity  4 non-null      float64
-dtypes: float64(1), object(3)
-memory usage: 288.0+ bytes
+ 4   Review    5 non-null      int64  
+dtypes: float64(1), int64(1), object(3)
+memory usage: 328.0+ bytes
 </pre>
 </div>
 </div>
@@ -8559,6 +8567,7 @@ memory usage: 288.0+ bytes
 <th>PriceBin</th>
 <th>Date</th>
 <th>Quantity</th>
+<th>Review</th>
 </tr>
 </thead>
 <tbody>
@@ -8568,12 +8577,14 @@ memory usage: 288.0+ bytes
 <td>5</td>
 <td>5</td>
 <td>4.000000</td>
+<td>5.000000</td>
 </tr>
 <tr>
 <th>unique</th>
 <td>5</td>
 <td>3</td>
 <td>2</td>
+<td>NaN</td>
 <td>NaN</td>
 </tr>
 <tr>
@@ -8582,12 +8593,14 @@ memory usage: 288.0+ bytes
 <td>medium</td>
 <td>06/07/2021</td>
 <td>NaN</td>
+<td>NaN</td>
 </tr>
 <tr>
 <th>freq</th>
 <td>1</td>
 <td>2</td>
 <td>3</td>
+<td>NaN</td>
 <td>NaN</td>
 </tr>
 <tr>
@@ -8596,6 +8609,7 @@ memory usage: 288.0+ bytes
 <td>NaN</td>
 <td>NaN</td>
 <td>40.000000</td>
+<td>3.000000</td>
 </tr>
 <tr>
 <th>std</th>
@@ -8603,6 +8617,7 @@ memory usage: 288.0+ bytes
 <td>NaN</td>
 <td>NaN</td>
 <td>40.620192</td>
+<td>1.581139</td>
 </tr>
 <tr>
 <th>min</th>
@@ -8610,6 +8625,7 @@ memory usage: 288.0+ bytes
 <td>NaN</td>
 <td>NaN</td>
 <td>10.000000</td>
+<td>1.000000</td>
 </tr>
 <tr>
 <th>25%</th>
@@ -8617,6 +8633,7 @@ memory usage: 288.0+ bytes
 <td>NaN</td>
 <td>NaN</td>
 <td>21.250000</td>
+<td>2.000000</td>
 </tr>
 <tr>
 <th>50%</th>
@@ -8624,6 +8641,7 @@ memory usage: 288.0+ bytes
 <td>NaN</td>
 <td>NaN</td>
 <td>25.000000</td>
+<td>3.000000</td>
 </tr>
 <tr>
 <th>75%</th>
@@ -8631,6 +8649,7 @@ memory usage: 288.0+ bytes
 <td>NaN</td>
 <td>NaN</td>
 <td>43.750000</td>
+<td>4.000000</td>
 </tr>
 <tr>
 <th>max</th>
@@ -8638,6 +8657,7 @@ memory usage: 288.0+ bytes
 <td>NaN</td>
 <td>NaN</td>
 <td>100.000000</td>
+<td>5.000000</td>
 </tr>
 </tbody>
 </table>
@@ -9151,6 +9171,7 @@ Name: Quantity, dtype: float64</pre>
 <th>PriceBin</th>
 <th>Date</th>
 <th>Quantity</th>
+<th>Review</th>
 <th>isna</th>
 <th>notna</th>
 <th>Quantity_imputed</th>
@@ -9163,6 +9184,7 @@ Name: Quantity, dtype: float64</pre>
 <td>low</td>
 <td>05/07/2021</td>
 <td>10.0</td>
+<td>2</td>
 <td>False</td>
 <td>True</td>
 <td>10.0</td>
@@ -9173,6 +9195,7 @@ Name: Quantity, dtype: float64</pre>
 <td>medium</td>
 <td>05/07/2021</td>
 <td>25.0</td>
+<td>1</td>
 <td>False</td>
 <td>True</td>
 <td>25.0</td>
@@ -9183,6 +9206,7 @@ Name: Quantity, dtype: float64</pre>
 <td>high</td>
 <td>06/07/2021</td>
 <td>100.0</td>
+<td>3</td>
 <td>False</td>
 <td>True</td>
 <td>100.0</td>
@@ -9193,6 +9217,7 @@ Name: Quantity, dtype: float64</pre>
 <td>medium</td>
 <td>06/07/2021</td>
 <td>25.0</td>
+<td>5</td>
 <td>False</td>
 <td>True</td>
 <td>25.0</td>
