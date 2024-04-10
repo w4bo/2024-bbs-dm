@@ -8,3 +8,4 @@ seaborn==0.13.2
 jupyter==1.0.0
 flaml[automl]==2.1.2
 rise==5.7.1
+paretoset==1.2.3
